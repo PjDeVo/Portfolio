@@ -1,0 +1,46 @@
+.about {
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: [about-s] 60px [about-e me-s] 1fr [me-e extra-s] 1fr [extrea-e];
+  width: 90%;
+  justify-self: center;
+
+  .about-pat {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: about-s/about-e;
+    justify-content: center;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #a01697;
+    border: 1px solid #fff;
+    background-color: #39cddd;
+    height: 60px;
+  }
+}
+
+.top-side-wrapper {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: me-s/me-e;
+  justify-content: center;
+  align-content: center;
+  height: 200px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  image {
+    flex-wrap: wrap;
+
+    width: 200px;
+    height: 50px;
+  }
+}

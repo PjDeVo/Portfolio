@@ -1,0 +1,61 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Images/Background-Images/keyboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  h1 {
+    font-size: 25px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(233, 12, 104, 0.062);
+  }
+  h2 {
+    font-size: 25px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 14s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(119, 4, 52, 0.062);
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+}
+
+.home-button {
+  border: 1.2px solid #fff;
+  background: transparent;
+  color: #a01697;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+
+  &:hover {
+    background-color: #39cddd;
+    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
+  }
+}
