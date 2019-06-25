@@ -1,0 +1,45 @@
+.contact-layout {
+  display: grid;
+  grid-row: contact-s/contact-e;
+  height: 100%;
+  width: 100%;
+
+  grid-template-rows: [header-s]60px[header-e forms-s] 1fr [forms-e];
+  grid-template-columns: [s] 1fr [e];
+  grid-row-gap: 20px;
+  justify-self: center;
+  background-image: url("./Images/Background-Images/coding.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-header {
+  display: flex;
+  grid-row: header-s/header-e;
+  grid-column: s/e;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #04c2c9;
+  // background-color: #39cddd;
+  height: 60px;
+  // border: 1px solid #a01697;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.contact-message {
+  font-size: 16px;
+  color: #04c2c9;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: [message-s] 60px[message-e forms-s] 1fr [forms-e button-s] 60px [button-e];
+  justify-items: center;
+}

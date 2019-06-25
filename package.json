@@ -84,6 +84,6 @@
     "loader": "^2.1.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^2.0.0",
-    "webpack": "^4.16.4"
+    "webpack": "^4.34.0"
   }
 }

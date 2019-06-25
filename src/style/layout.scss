@@ -7,5 +7,5 @@
   width: 100%;
   display: grid;
   grid-template-columns: [s] 1fr [e];
-  grid-template-rows: [home-s] 1fr [home-e about-s] 1fr[about-e projects-s] 1fr [projects-e contact-s] 1fr [contact-e];
+  grid-template-rows: [home-s] 1fr [home-e about-s] 1fr[about-e projects-s] 1fr [projects-e contact-s] 1fr [contact-e footer-s] 0.5fr [footer-e];
 }

@@ -4,6 +4,7 @@ import Home from "./home";
 import About from "./about";
 import Projects from "./projects";
 import Contact from "./contact";
+import Footer from "./footer";
 
 export default class App extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends Component {
         <About />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     );
   }
