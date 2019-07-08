@@ -5,7 +5,7 @@ import About from "./about";
 import Projects from "./projects";
 import Contact from "./contact";
 import Footer from "./footer";
-import scrollToComponent from "react-scroll-to-component";
+// import scrollToComponent from "react-scroll-to-component";
 
 export default class App extends Component {
   render() {
