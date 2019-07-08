@@ -14,6 +14,11 @@
   grid-row: return-s/return-e;
   grid-column: 1/-1;
   justify-content: center;
+
+  img {
+    max-width: 200px;
+    max-height: 80px;
+  }
 }
 
 .social-media {
@@ -21,6 +26,20 @@
   justify-content: center;
   grid-row: links-s/links-e;
   grid-column: 1/-1;
+
+  svg {
+    font-size: 60px;
+    padding: 7px;
+    color: #a01697;
+    margin-left: 10px;
+    border: 1px solid #2c292c;
+    background-color: grey;
+    box-sizing: border-box;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 img {

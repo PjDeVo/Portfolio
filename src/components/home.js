@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import scrollToComponent from "react-scroll-to-component";
+import HomeButton from "./buttons/homeButton";
 
 class Home extends Component {
   constructor() {
@@ -6,6 +8,16 @@ class Home extends Component {
     this.state = {
       name: "Patrick DeVincentis"
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    scrollToComponent(this.props.section, {
+      offset: 0,
+      align: "top",
+      duration: 1000,
+      ease: "inCirc"
+    });
   }
 
   render() {
@@ -27,9 +39,10 @@ class Home extends Component {
         <div>
           <h2 style={titleStyle}>Front End React JS Developer</h2>
         </div>
-        <div>
-          <button className="home-button"> Click Here to Meet Me</button>
-        </div>
+        <button className="home-button" onClick={() => this.handleClick}>
+          {" "}
+          Click Here to Meet Me
+        </button>
       </div>
     );
   }

@@ -40,7 +40,8 @@
   grid-column: 1/-1;
   grid-row: me-s/me-e;
   justify-content: center;
-  align-content: center;
+  align-self: center;
+  margin-bottom: 40px;
   height: 200px;
 }
 

@@ -87,7 +87,7 @@ class FormContainer extends Component {
           value={this.state.body}
           onChange={this.state.handleBody}
           placeholder={
-            "Shoot me a message if you have a questino or want to work together!"
+            "Shoot me a message if you have a question or want to work together!"
           }
         />
       </form>

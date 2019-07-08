@@ -11,6 +11,13 @@
   justify-self: center;
   img {
     margin: 20px;
+    max-height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #252934;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 }
 
