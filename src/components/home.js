@@ -39,10 +39,10 @@ class Home extends Component {
         <div>
           <h2 style={titleStyle}>Front End React JS Developer</h2>
         </div>
-        <button className="home-button" onClick={() => this.handleClick}>
+        <a className="home-button" onClick={() => this.handleClick} href='#about'>
           {" "}
           Click Here to Meet Me
-        </button>
+        </a>
       </div>
     );
   }

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import javascript from "../../src/style/Images/Background-Images/javascript.png";
 import html from "../../src/style/Images/Background-Images/html.jpg";
 import react from "../../src/style/Images/Background-Images/react.png";
@@ -11,7 +11,7 @@ class About extends React.Component {
       backgroundImage: "../../src/style/Images/Background-Images/html.jpg"
     };
     return (
-      <div className="about">
+      <div className="about" id='about'>
         <div className="about-pat">About</div>
 
         <div className="top-side-wrapper">

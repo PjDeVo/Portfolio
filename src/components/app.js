@@ -12,14 +12,14 @@ export default class App extends Component {
     return (
       <div className="layout">
         <Home section={"this.About"} />
-        <section
+        {/* <section
           ref={section => {
             this.About = section;
           }}
         >
-          {" "}
+          {" "} */}
           <About />
-        </section>
+        {/* </section> */}
         <Projects class="Projects" />
         <Contact class="Contact" />
         <Footer />
