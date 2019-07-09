@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 import coursescheduler from "../style/Images/Background-Images/course-scheduler.png";
-import dailySmarty from "../style/Images/Background-images/dailysmarty.png";
-import devfries from "../style/Images/Background-images/devcamp-fries.png";
-import ecom from "../style/Images/Background-images/ecom-site.png";
-import madlibs from "../style/Images/Background-images/madlibs.png";
-import propmanagement from "../style/Images/Background-images/property-management.png";
+import dailySmarty from "../style/Images/Background-Images/dailysmarty.png";
+import devfries from "../style/Images/Background-Images/devcamp-fries.png";
+import ecom from "../style/Images/Background-Images/ecom-site.png";
+import madlibs from "../style/Images/Background-Images/madlibs.png";
+import propmanagement from "../style/Images/Background-Images/property-management.png";
 
 class Projects extends React.Component {
   render() {
