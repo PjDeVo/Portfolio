@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import coursescheduler from "../style/Images/Background-images/course-scheduler.png";
+import coursescheduler from "../style/Images/Background-Images/course-scheduler.png";
 import dailySmarty from "../style/Images/Background-images/dailysmarty.png";
 import devfries from "../style/Images/Background-images/devcamp-fries.png";
 import ecom from "../style/Images/Background-images/ecom-site.png";
