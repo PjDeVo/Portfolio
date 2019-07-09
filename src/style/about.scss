@@ -3,14 +3,16 @@
   display: grid;
   overflow-y: inherit;
 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: [about-s] 60px [about-e me-s] 0.8fr [me-e extra-s] 1fr [extrea-e];
+  grid-template-columns: [s] 1fr [mid] 1fr [en];
+  grid-template-rows: [about-s] 60px [about-e me-s] 0.5fr [me-e extra-s] 1fr [extra-e];
   grid-row: about-s/about-e;
-  width: 90%;
+  width: 100%;
   justify-self: center;
 
   .about-pat {
     display: grid;
+    width: 90vw;
+    justify-self: center;
     grid-column: 1/-1;
     justify-content: center;
     align-items: center;
@@ -79,12 +81,20 @@
   justify-content: center;
   font-family: "Open-sans";
 }
-
+.bottom-side-wrapper {
+  display: flex;
+  grid-column: 1/-1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .bio-wrapper {
   display: grid;
+  grid-row: extra-s/extra-e;
+  grid-column: mid/en;
   align-content: center;
   justify-self: center;
-  max-width: 400px;
+  max-width: 300px;
+  min-height: 300px;
   background-color: #80ced6;
   clip-path: polygon(
     0% 0%,
@@ -109,9 +119,10 @@
 }
 
 .bio-description {
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Open-sans";
   color: #a01697;
   font-weight: bold;
   margin: 10px;
+  padding: 10px;
 }

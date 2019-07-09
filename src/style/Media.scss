@@ -1,0 +1,47 @@
+.about {
+  .top-side-wrapper {
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      margin: 50px;
+      justify-content: center;
+      align-self: start;
+      img {
+        align-self: center;
+        min-width: 70px;
+      }
+    }
+
+    .image-container {
+      @media (min-width: 320px) and (max-width: 768px) {
+        display: flex;
+        max-width: 100px;
+        min-width: 50px;
+        margin-bottom: 40px;
+        justify-self: center;
+      }
+
+      .react-image {
+        @media (min-width: 320px) and (max-width: 768px) {
+        }
+      }
+    }
+  }
+
+  .bottom-side-wrapper {
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+  }
+}
+
+.projects {
+  img {
+    @media (min-width: 320px) and (max-width: 768px) {
+      max-width: 300px;
+    }
+  }
+}

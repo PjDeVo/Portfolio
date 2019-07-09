@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import javascript from "../../src/style/Images/Background-Images/javascript.png";
 import html from "../../src/style/Images/Background-Images/html.jpg";
 import react from "../../src/style/Images/Background-Images/react.png";
@@ -11,7 +11,7 @@ class About extends React.Component {
       backgroundImage: "../../src/style/Images/Background-Images/html.jpg"
     };
     return (
-      <div className="about">
+      <div className="about" id="about">
         <div className="about-pat">About</div>
 
         <div className="top-side-wrapper">
@@ -28,22 +28,24 @@ class About extends React.Component {
             <img src={css} className="css-image" />
           </div>
         </div>
-
-        <div className="about-photo">
-          <div className="my-name"> Hi, I'm Pat </div>
-          <img src={Pat} />
-          <div className="introduction"> Allow Me To Introduce Myself </div>
-        </div>
-        <div className="bio-wrapper">
-          <div className="bio-description">
-            Hello, My name is Pat. I am a Front End developer focusing primarily
-            in React JS. Currently I am working full time in customer service I
-            am looking for oppurtuities to build projects, expand my knowledge,
-            and eventually work full time as a developer. Outside of work my
-            hobbies include being a full time dog dad and practicing and
-            competing in the mixed martial art of Jiu Jitsu. I look foward to
-            challenges, welcome tough projects, and love learning new things.
-            Let's work together and make something awesome...
+        <div className="bottom-side-wrapper">
+          <div className="about-photo">
+            <div className="my-name"> Hi, I'm Pat </div>
+            <img src={Pat} />
+            <div className="introduction"> Allow Me To Introduce Myself </div>
+          </div>
+          <div className="bio-wrapper">
+            <div className="bio-description">
+              Hello, My name is Pat. I am a Front End developer focusing
+              primarily in React JS. Currently I am working full time in
+              customer service I am looking for oppurtuities to build projects,
+              expand my knowledge, and eventually work full time as a developer.
+              Outside of work my hobbies include being a full time dog dad and
+              practicing and competing in the mixed martial art of Jiu Jitsu. I
+              look foward to challenges, welcome tough projects, and love
+              learning new things. Let's work together and make something
+              awesome...
+            </div>
           </div>
         </div>
       </div>

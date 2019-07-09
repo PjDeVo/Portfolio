@@ -64,7 +64,7 @@ class FormContainer extends Component {
     return (
       <form>
         <Input
-          className={"name-form"}
+          className={"name-form form-control"}
           name={"Name"}
           inputType={"text"}
           value={this.state.name}
@@ -72,7 +72,7 @@ class FormContainer extends Component {
           placeholder={"Name"}
         />
         <Input
-          className={"email-form"}
+          className={"email-form form-control"}
           name={"Email"}
           inputType={"text"}
           value={this.state.email}
@@ -80,7 +80,7 @@ class FormContainer extends Component {
           placeholder={"Email"}
         />
         <TextArea
-          className={"body-form"}
+          className={"body-form form-control"}
           name={"Body"}
           rows={10}
           cols={60}

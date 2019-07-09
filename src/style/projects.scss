@@ -7,7 +7,6 @@
   grid-template-columns: [s] 1fr [e];
   grid-template-rows: [label-s] 60px[label-e row1-s ] 1fr [row1-e row2-s] 1fr [row2-e];
   grid-row-gap: 20px;
-  width: 90%;
   justify-self: center;
   img {
     margin: 20px;
@@ -22,6 +21,7 @@
 }
 
 .projects-header {
+  width: 90%;
   display: flex;
   grid-row: label-s/label-e;
   grid-column: 1/-1;
@@ -35,6 +35,7 @@
   border: 1px solid #a01697;
   justify-content: center;
   align-items: center;
+  justify-self: center;
 }
 
 .projects-row-one {
