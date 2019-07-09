@@ -18,12 +18,12 @@ class HomeButton extends React.Component {
   }
   render() {
     return (
-      <div>
-        <button className="home-button" onClick={() => this.handleClick}>
+      <React.Fragment>
+        <button className="home-button" onClick={() => this.handleClick} href='#about'>
           {" "}
           Click Here to Meet Me
         </button>
-      </div>
+      </React.Fragment>
     );
   }
 }

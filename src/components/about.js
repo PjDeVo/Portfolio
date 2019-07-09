@@ -11,7 +11,11 @@ class About extends React.Component {
       backgroundImage: "../../src/style/Images/Background-Images/html.jpg"
     };
     return (
+<<<<<<< HEAD
       <div className="about" id="about">
+=======
+      <div className="about" id='about'>
+>>>>>>> cc5859b02ea6f3e39be16985e0ff73faee395215
         <div className="about-pat">About</div>
 
         <div className="top-side-wrapper">

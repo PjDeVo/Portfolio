@@ -18,7 +18,11 @@ export default class App extends Component {
           }}
         >
           {" "} */}
+<<<<<<< HEAD
         <About />
+=======
+          <About />
+>>>>>>> cc5859b02ea6f3e39be16985e0ff73faee395215
         {/* </section> */}
         <Projects class="Projects" />
         <Contact class="Contact" />
