@@ -27,6 +27,12 @@
   grid-row: links-s/links-e;
   grid-column: 1/-1;
 
+  .facebook {
+    svg {
+      width: 53px;
+    }
+  }
+
   svg {
     font-size: 60px;
     padding: 7px;
@@ -38,6 +44,8 @@
 
     &:hover {
       cursor: pointer;
+      background-color: teal;
+      transition: 0.7s ease-in-out;
     }
   }
 }

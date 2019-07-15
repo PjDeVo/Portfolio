@@ -20,7 +20,11 @@ const Footer = () => {
         <img className="logo" src={logo} />
       </div>
       <div className="social-media">
-        <a href="https://www.facebook.com/pat.devincentis" target="blank">
+        <a
+          className="facebook"
+          href="https://www.facebook.com/pat.devincentis"
+          target="blank"
+        >
           <FontAwesomeIcon
             className="facebook-icon"
             icon={["fab", "facebook-f"]}
