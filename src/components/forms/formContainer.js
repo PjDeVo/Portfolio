@@ -7,89 +7,75 @@ class FormContainer extends Component {
     super(props);
 
     this.state = {
-      form: {
-        name: "",
-        email: "",
-        body: ""
-      }
+      name: "",
+      topic: "",
+      body: ""
     };
     this.handleInput = this.handleInput.bind(this);
-    this.handleEmail = this.handleEmail.bind(this);
     this.handleBody = this.handleBody.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleTopic = this.handleTopic.bind(this);
   }
 
   handleInput(e) {
-    let value = e.target.value;
-    let name = e.target.name;
-    this.setState(
-      prevState => ({
-        newUser: {
-          ...prevState.form,
-          [name]: value
-        }
-      })
-      // () => console.log(this.state.form)
-    );
-  }
-
-  handleEmail(e) {
-    let value = e.target.value;
-    let email = e.target.name;
-    this.setState(
-      prevState => ({
-        newUser: {
-          ...prevState.form,
-          [email]: value
-        }
-      })
-      // () => console.log(this.state.form)
-    );
+    this.setState({
+      name: e.target.value
+    });
   }
 
   handleBody(e) {
-    let value = e.target.value;
-    let body = e.target.name;
-    this.setState(
-      prevState => ({
-        newUser: {
-          ...prevState.form,
-          [body]: value
-        }
-      })
-      // () => console.log(this.state.form)
-    );
+    this.setState({
+      body: e.target.value
+    });
+  }
+
+  handleTopic(e) {
+    this.setState({
+      topic: e.target.value
+    });
+  }
+  handleSubmit(e) {
+    (window.location = `mailto:devincentis529@gmail.com?body= 
+    
+    Hello, my name is ${this.state.name}!
+     \n
+  
+     ${this.state.body} &subject= ${this.state.topic}`),
+      e.preventDefault();
   }
 
   render() {
     return (
-      <form>
+      <form className="form-wrapper" onSubmit={this.handleSubmit}>
         <Input
           className={"name-form form-control"}
           name={"Name"}
-          inputType={"text"}
+          type={"text"}
           value={this.state.name}
-          handleChange={this.handleInput}
+          onChange={this.handleInput}
           placeholder={"Name"}
         />
+
         <Input
           className={"email-form form-control"}
-          name={"Email"}
-          inputType={"text"}
-          value={this.state.email}
-          handleChange={this.handleEmail}
-          placeholder={"Email"}
+          name={"Topic"}
+          type={"text"}
+          value={this.state.topic}
+          onChange={this.handleTopic}
+          placeholder={"Topic"}
         />
-        <TextArea
+        <textarea
           className={"body-form form-control"}
           name={"Body"}
           rows={10}
           cols={60}
           value={this.state.body}
-          onChange={this.state.handleBody}
+          onChange={this.handleBody}
           placeholder={
             "Shoot me a message if you have a question or want to work together!"
           }
         />
+        <input className="form-button" type="submit" />
       </form>
     );
   }
